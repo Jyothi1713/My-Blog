@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog - Thoughts on Code and Life</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-info text-white text-center py-4">
+        <div class="container">
+            <h1>My Awesome Blog</h1>
+            <p>Random musings on tech, travel, and tacos. Welcome!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Blog Posts -->
+            <div class="col-lg-8">
+                <h2>Latest Posts</h2>
+                <div class="mb-3">
+                    <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="tech">Tech</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="life">Life</button>
+                </div>
+                <div id="post-list">
+                    <article class="post-item mb-4" data-category="tech">
+                        <h3>Why I Love JavaScript</h3>
+                        <p>Posted on Oct 10, 2025</p>
+                        <img src="https://canto.com/cdn/2019/07/19194417/insert-image-html.jpg" alt="JavaScript Code" class="img-fluid mb-3">
+                        <p>JS is like that friend who's always there for you. Messy at times, but gets the job done. Here's why...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </article>
+                    <article class="post-item mb-4" data-category="life">
+                        <h3>My Hiking Adventures</h3>
+                        <p>Posted on Sep 15, 2025</p>
+                        <img src="https://img.freepik.com/free-photo/taking-path-mountains_1098-12856.jpg?semt=ais_hybrid&w=740&q=80" alt="Hiking Trail" class="img-fluid mb-3">
+                        <p>Nothing beats fresh air and a good trail. Last weekend, I conquered a mountain—well, a hill. Details inside.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </article>
+                    <article class="post-item mb-4" data-category="tech">
+                        <h3>Building Responsive Sites</h3>
+                        <p>Posted on Dec 5, 2025</p>
+                        <img src="https://img-c.udemycdn.com/course/750x422/787236_67ff_3.jpg" alt="Responsive Design" class="img-fluid mb-3">
+                        <p>Bootstrap makes it easy, but I still tweak CSS manually. Here's my process...</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </article>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+                <h3>About Me</h3>
+                <p>Hey, I'm Teju. Coder by day, explorer by night. This blog is my digital diary.</p>
+                <h3>Categories</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Tech</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Life</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none">Travel</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Drop a Comment</h2>
+            <form id="contact-form" class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Teju's Blog. Powered by coffee and curiosity.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

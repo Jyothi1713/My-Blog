@@ -1,0 +1,45 @@
+
+
+body {
+    font-family: 'Georgia', serif; 
+}
+header {
+    background: linear-gradient(to right, #17a2b8, #20c997); 
+}
+
+.post-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    display: block; 
+}
+
+.post-item:hover {
+    background-color: #f8f9fa;
+    transition: background 0.3s;
+}
+
+@media (max-width: 991.98px) {
+    aside {
+        margin-top: 30px; 
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+    .post-item img {
+        height: 200px; 
+        object-fit: cover;
+    }
+}
+
+
+footer:hover::after {
+    content: "Shh... Don't tell anyone, but I love puns!";
+    display: block;
+    color: #ffc107;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
